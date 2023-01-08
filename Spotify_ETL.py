@@ -3,11 +3,11 @@ import pandas as pd
 from sqlalchemy import create_engine
 import json
 from datetime import datetime, timedelta
-import sqlite3
+import psycopg2
 
 from tokens import token
 
-DATABASE_LOCATION = 'sqlite:///spotify_data.sqlite'
+DATABASE_LOCATION = 'postgresql+psycopg2://postgres:5555@localhost:5432/postgres'
 
 headers = {"Accept": "application/json",
            "Content-Type": "application/json",
@@ -40,7 +40,12 @@ def check_is_valid_data(df: pd.DataFrame) -> bool:
             raise Exception("At least one of the returned songs does not have a yesterday's timestamp")
 
     return True
-if __name__ == "__main__":
+def run_spotify_etl():
+    DATABASE_LOCATION = 'postgresql+psycopg2://postgres:5555@localhost:5432/postgres'
+
+    headers = {"Accept": "application/json",
+               "Content-Type": "application/json",
+               "Authorization": "Bearer {token}".format(token=token)}
 
     yesterday = datetime.now() - timedelta(days=1)
     yesterday = yesterday.replace(hour=0, minute=0, second=0, microsecond=0)
@@ -73,7 +78,11 @@ if __name__ == "__main__":
         print('Data valid, proceed to Load stage')
 
     engine = create_engine(DATABASE_LOCATION)
-    conn = sqlite3.connect('spotify_data.sqlite')
+    conn = psycopg2.connect(user='postgres',
+                            password='5555',
+                            host='localhost',
+                            port='5432',
+                            database='postgres')
     cursor = conn.cursor()
 
     sql_query = """
@@ -88,7 +97,7 @@ if __name__ == "__main__":
 
     cursor.execute(sql_query)
     print("Opened database successfully")
-
+    conn.commit()
     try:
         spotify_df.to_sql("spotify_data", engine, index=False, if_exists='append')
         print('Data add successfully')
