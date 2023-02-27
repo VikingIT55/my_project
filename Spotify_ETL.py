@@ -74,8 +74,8 @@ def run_spotify_etl():
 
     spotify_df = pd.DataFrame(song_dict, columns=['played_at', 'artist', 'name_track', 'timestamps'])
 
-    if check_is_valid_data(spotify_df):
-        print('Data valid, proceed to Load stage')
+    #if check_is_valid_data(spotify_df):
+        #print('Data valid, proceed to Load stage')
 
     engine = create_engine(DATABASE_LOCATION)
     conn = psycopg2.connect(user='postgres',
