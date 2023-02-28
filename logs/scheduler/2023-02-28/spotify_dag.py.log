@@ -1,0 +1,575 @@
+[2023-02-28 17:12:50,448] {processor.py:153} INFO - Started process (PID=175) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:12:50,448] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:12:50,449] {logging_mixin.py:115} INFO - [2023-02-28 17:12:50,449] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:12:50,479] {logging_mixin.py:115} INFO - [2023-02-28 17:12:50,478] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:12:50,479] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:12:50,522] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.077 seconds
+[2023-02-28 17:13:20,631] {processor.py:153} INFO - Started process (PID=181) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:20,632] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:13:20,632] {logging_mixin.py:115} INFO - [2023-02-28 17:13:20,632] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:20,638] {logging_mixin.py:115} INFO - [2023-02-28 17:13:20,637] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:13:20,639] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:20,662] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.033 seconds
+[2023-02-28 17:13:50,716] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:50,716] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:13:50,717] {logging_mixin.py:115} INFO - [2023-02-28 17:13:50,717] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:50,722] {logging_mixin.py:115} INFO - [2023-02-28 17:13:50,721] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:13:50,722] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:13:50,743] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.032 seconds
+[2023-02-28 17:14:20,800] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:20,801] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:14:20,801] {logging_mixin.py:115} INFO - [2023-02-28 17:14:20,801] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:20,807] {logging_mixin.py:115} INFO - [2023-02-28 17:14:20,806] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:14:20,807] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:20,836] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.039 seconds
+[2023-02-28 17:14:50,894] {processor.py:153} INFO - Started process (PID=196) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:50,894] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:14:50,895] {logging_mixin.py:115} INFO - [2023-02-28 17:14:50,895] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:50,901] {logging_mixin.py:115} INFO - [2023-02-28 17:14:50,900] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:14:50,901] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:14:50,933] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.043 seconds
+[2023-02-28 17:15:20,967] {processor.py:153} INFO - Started process (PID=201) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:20,971] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:15:20,971] {logging_mixin.py:115} INFO - [2023-02-28 17:15:20,971] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:20,978] {logging_mixin.py:115} INFO - [2023-02-28 17:15:20,977] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:15:20,979] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:21,012] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.048 seconds
+[2023-02-28 17:15:51,071] {processor.py:153} INFO - Started process (PID=206) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:51,072] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:15:51,072] {logging_mixin.py:115} INFO - [2023-02-28 17:15:51,072] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:51,078] {logging_mixin.py:115} INFO - [2023-02-28 17:15:51,077] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:15:51,078] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:15:51,106] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.038 seconds
+[2023-02-28 17:16:21,161] {processor.py:153} INFO - Started process (PID=211) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:21,163] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:16:21,163] {logging_mixin.py:115} INFO - [2023-02-28 17:16:21,163] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:21,173] {logging_mixin.py:115} INFO - [2023-02-28 17:16:21,172] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:16:21,173] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:21,195] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.037 seconds
+[2023-02-28 17:16:51,251] {processor.py:153} INFO - Started process (PID=216) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:51,252] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:16:51,252] {logging_mixin.py:115} INFO - [2023-02-28 17:16:51,252] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:51,257] {logging_mixin.py:115} INFO - [2023-02-28 17:16:51,256] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:16:51,257] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:16:51,278] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.029 seconds
+[2023-02-28 17:17:21,346] {processor.py:153} INFO - Started process (PID=230) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:21,347] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:17:21,348] {logging_mixin.py:115} INFO - [2023-02-28 17:17:21,347] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:21,354] {logging_mixin.py:115} INFO - [2023-02-28 17:17:21,353] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:17:21,354] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:21,385] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.042 seconds
+[2023-02-28 17:17:51,469] {processor.py:153} INFO - Started process (PID=240) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:51,473] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:17:51,473] {logging_mixin.py:115} INFO - [2023-02-28 17:17:51,473] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:51,478] {logging_mixin.py:115} INFO - [2023-02-28 17:17:51,478] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+ModuleNotFoundError: No module named 'Spotify_ETL'
+[2023-02-28 17:17:51,479] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:17:51,524] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.058 seconds
+[2023-02-28 17:18:21,591] {processor.py:153} INFO - Started process (PID=248) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:21,592] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:18:21,592] {logging_mixin.py:115} INFO - [2023-02-28 17:18:21,592] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:22,020] {logging_mixin.py:115} INFO - [2023-02-28 17:18:22,019] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+  File "/opt/airflow/dags/Spotify_ETL.py", line 8, in <module>
+    from tokens import token
+ModuleNotFoundError: No module named 'tokens'
+[2023-02-28 17:18:22,020] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:22,040] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.452 seconds
+[2023-02-28 17:18:52,718] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:52,719] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:18:52,721] {logging_mixin.py:115} INFO - [2023-02-28 17:18:52,720] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:53,076] {logging_mixin.py:115} INFO - [2023-02-28 17:18:53,075] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 5, in <module>
+    from Spotify_ETL import run_spotify_etl
+  File "/opt/airflow/dags/Spotify_ETL.py", line 8, in <module>
+    from tokens import token
+ModuleNotFoundError: No module named 'tokens'
+[2023-02-28 17:18:53,076] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:18:53,095] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.381 seconds
+[2023-02-28 17:19:23,884] {processor.py:153} INFO - Started process (PID=272) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:23,885] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:19:23,885] {logging_mixin.py:115} INFO - [2023-02-28 17:19:23,885] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:24,238] {logging_mixin.py:115} INFO - [2023-02-28 17:19:24,237] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:19:24,238] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:24,259] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.377 seconds
+[2023-02-28 17:19:55,090] {processor.py:153} INFO - Started process (PID=283) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:55,093] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:19:55,094] {logging_mixin.py:115} INFO - [2023-02-28 17:19:55,094] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:55,569] {logging_mixin.py:115} INFO - [2023-02-28 17:19:55,567] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:19:55,569] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:19:55,592] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.506 seconds
+[2023-02-28 17:20:26,270] {processor.py:153} INFO - Started process (PID=294) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:26,272] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:20:26,272] {logging_mixin.py:115} INFO - [2023-02-28 17:20:26,272] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:26,727] {logging_mixin.py:115} INFO - [2023-02-28 17:20:26,726] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:20:26,728] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:26,753] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.487 seconds
+[2023-02-28 17:20:57,493] {processor.py:153} INFO - Started process (PID=305) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:57,494] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:20:57,494] {logging_mixin.py:115} INFO - [2023-02-28 17:20:57,494] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:57,841] {logging_mixin.py:115} INFO - [2023-02-28 17:20:57,840] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:20:57,841] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:20:57,862] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.373 seconds
+[2023-02-28 17:21:28,671] {processor.py:153} INFO - Started process (PID=316) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:28,678] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:21:28,679] {logging_mixin.py:115} INFO - [2023-02-28 17:21:28,679] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:29,564] {logging_mixin.py:115} INFO - [2023-02-28 17:21:29,563] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:21:29,564] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:29,594] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.939 seconds
+[2023-02-28 17:21:53,883] {processor.py:153} INFO - Started process (PID=327) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:53,885] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:21:53,886] {logging_mixin.py:115} INFO - [2023-02-28 17:21:53,886] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:54,467] {logging_mixin.py:115} INFO - [2023-02-28 17:21:54,466] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:21:54,468] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:21:54,507] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.627 seconds
+[2023-02-28 17:22:25,072] {processor.py:153} INFO - Started process (PID=338) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:25,073] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:22:25,073] {logging_mixin.py:115} INFO - [2023-02-28 17:22:25,073] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:25,427] {logging_mixin.py:115} INFO - [2023-02-28 17:22:25,426] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:22:25,427] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:25,448] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.379 seconds
+[2023-02-28 17:22:56,238] {processor.py:153} INFO - Started process (PID=349) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:56,239] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:22:56,240] {logging_mixin.py:115} INFO - [2023-02-28 17:22:56,240] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:56,591] {logging_mixin.py:115} INFO - [2023-02-28 17:22:56,590] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:22:56,591] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:22:56,611] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.377 seconds
+[2023-02-28 17:23:27,386] {processor.py:153} INFO - Started process (PID=360) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:27,387] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:23:27,388] {logging_mixin.py:115} INFO - [2023-02-28 17:23:27,387] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:27,776] {logging_mixin.py:115} INFO - [2023-02-28 17:23:27,775] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:23:27,776] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:27,795] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.412 seconds
+[2023-02-28 17:23:49,858] {processor.py:153} INFO - Started process (PID=366) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:49,859] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:23:49,860] {logging_mixin.py:115} INFO - [2023-02-28 17:23:49,859] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:50,251] {logging_mixin.py:115} INFO - [2023-02-28 17:23:50,251] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:23:50,252] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:23:50,290] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.434 seconds
+[2023-02-28 17:24:20,938] {processor.py:153} INFO - Started process (PID=377) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:20,941] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:24:20,942] {logging_mixin.py:115} INFO - [2023-02-28 17:24:20,942] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:21,377] {logging_mixin.py:115} INFO - [2023-02-28 17:24:21,376] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:24:21,377] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:21,397] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.463 seconds
+[2023-02-28 17:24:52,114] {processor.py:153} INFO - Started process (PID=388) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:52,118] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:24:52,118] {logging_mixin.py:115} INFO - [2023-02-28 17:24:52,118] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:52,458] {logging_mixin.py:115} INFO - [2023-02-28 17:24:52,456] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:24:52,458] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:24:52,477] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.368 seconds
+[2023-02-28 17:25:23,251] {processor.py:153} INFO - Started process (PID=399) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:23,252] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:25:23,252] {logging_mixin.py:115} INFO - [2023-02-28 17:25:23,252] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:23,613] {logging_mixin.py:115} INFO - [2023-02-28 17:25:23,612] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:25:23,614] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:23,633] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.385 seconds
+[2023-02-28 17:25:54,430] {processor.py:153} INFO - Started process (PID=410) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:54,434] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:25:54,435] {logging_mixin.py:115} INFO - [2023-02-28 17:25:54,434] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:54,832] {logging_mixin.py:115} INFO - [2023-02-28 17:25:54,831] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule_interval=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'default_arg'
+[2023-02-28 17:25:54,832] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:54,849] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.421 seconds
+[2023-02-28 17:25:58,649] {processor.py:153} INFO - Started process (PID=421) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:58,650] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:25:58,650] {logging_mixin.py:115} INFO - [2023-02-28 17:25:58,650] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:59,075] {logging_mixin.py:115} INFO - [2023-02-28 17:25:59,074] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 30, in <module>
+    run_etl()
+TypeError: 'PythonOperator' object is not callable
+[2023-02-28 17:25:59,075] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:25:59,103] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.456 seconds
+[2023-02-28 17:26:29,967] {processor.py:153} INFO - Started process (PID=432) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:26:29,971] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:26:29,971] {logging_mixin.py:115} INFO - [2023-02-28 17:26:29,971] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:26:30,475] {logging_mixin.py:115} INFO - [2023-02-28 17:26:30,475] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 30, in <module>
+    run_etl()
+TypeError: 'PythonOperator' object is not callable
+[2023-02-28 17:26:30,476] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:26:30,502] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.537 seconds
+[2023-02-28 17:27:01,139] {processor.py:153} INFO - Started process (PID=443) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:01,143] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:27:01,144] {logging_mixin.py:115} INFO - [2023-02-28 17:27:01,143] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:01,511] {logging_mixin.py:115} INFO - [2023-02-28 17:27:01,510] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 30, in <module>
+    run_etl()
+TypeError: 'PythonOperator' object is not callable
+[2023-02-28 17:27:01,511] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:01,530] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.397 seconds
+[2023-02-28 17:27:07,580] {processor.py:153} INFO - Started process (PID=449) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:07,584] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:27:07,588] {logging_mixin.py:115} INFO - [2023-02-28 17:27:07,588] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:08,099] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:08,210] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,210] {manager.py:508} INFO - Created Permission View: can delete on DAG:spotify_dag
+[2023-02-28 17:27:08,233] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,233] {manager.py:508} INFO - Created Permission View: can edit on DAG:spotify_dag
+[2023-02-28 17:27:08,245] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,245] {manager.py:508} INFO - Created Permission View: can read on DAG:spotify_dag
+[2023-02-28 17:27:08,245] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,245] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:27:08,261] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,260] {dag.py:2390} INFO - Creating ORM DAG for spotify_dag
+[2023-02-28 17:27:08,279] {logging_mixin.py:115} INFO - [2023-02-28 17:27:08,279] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:27:08,301] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.730 seconds
+[2023-02-28 17:27:29,400] {processor.py:153} INFO - Started process (PID=460) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:29,401] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:27:29,406] {logging_mixin.py:115} INFO - [2023-02-28 17:27:29,406] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:29,991] {logging_mixin.py:115} INFO - [2023-02-28 17:27:29,986] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'schedule'
+[2023-02-28 17:27:29,991] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:27:30,027] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.630 seconds
+[2023-02-28 17:28:00,479] {processor.py:153} INFO - Started process (PID=471) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:00,480] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:28:00,481] {logging_mixin.py:115} INFO - [2023-02-28 17:28:00,481] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:00,913] {logging_mixin.py:115} INFO - [2023-02-28 17:28:00,912] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'schedule'
+[2023-02-28 17:28:00,913] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:00,940] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.464 seconds
+[2023-02-28 17:28:31,635] {processor.py:153} INFO - Started process (PID=482) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:31,636] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:28:31,636] {logging_mixin.py:115} INFO - [2023-02-28 17:28:31,636] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:32,114] {logging_mixin.py:115} INFO - [2023-02-28 17:28:32,113] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 22, in <module>
+    schedule=timedelta(days=1)
+TypeError: __init__() got an unexpected keyword argument 'schedule'
+[2023-02-28 17:28:32,114] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:32,136] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.504 seconds
+[2023-02-28 17:28:52,201] {processor.py:153} INFO - Started process (PID=488) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:52,202] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:28:52,203] {logging_mixin.py:115} INFO - [2023-02-28 17:28:52,203] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:52,769] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:28:52,803] {logging_mixin.py:115} INFO - [2023-02-28 17:28:52,803] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:28:52,841] {logging_mixin.py:115} INFO - [2023-02-28 17:28:52,841] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:28:52,862] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.665 seconds
+[2023-02-28 17:29:22,935] {processor.py:153} INFO - Started process (PID=502) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:22,938] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:29:22,939] {logging_mixin.py:115} INFO - [2023-02-28 17:29:22,939] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:23,438] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:23,470] {logging_mixin.py:115} INFO - [2023-02-28 17:29:23,470] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:29:23,501] {logging_mixin.py:115} INFO - [2023-02-28 17:29:23,501] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:29:23,518] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.587 seconds
+[2023-02-28 17:29:54,016] {processor.py:153} INFO - Started process (PID=513) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:54,017] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:29:54,018] {logging_mixin.py:115} INFO - [2023-02-28 17:29:54,018] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:54,376] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:29:54,397] {logging_mixin.py:115} INFO - [2023-02-28 17:29:54,397] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:29:54,422] {logging_mixin.py:115} INFO - [2023-02-28 17:29:54,422] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:29:54,434] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.421 seconds
+[2023-02-28 17:30:25,184] {processor.py:153} INFO - Started process (PID=524) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:25,188] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:30:25,188] {logging_mixin.py:115} INFO - [2023-02-28 17:30:25,188] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:25,541] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:25,561] {logging_mixin.py:115} INFO - [2023-02-28 17:30:25,561] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:30:25,583] {logging_mixin.py:115} INFO - [2023-02-28 17:30:25,583] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:30:25,594] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.413 seconds
+[2023-02-28 17:30:56,342] {processor.py:153} INFO - Started process (PID=535) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:56,342] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:30:56,343] {logging_mixin.py:115} INFO - [2023-02-28 17:30:56,343] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:56,904] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:30:56,932] {logging_mixin.py:115} INFO - [2023-02-28 17:30:56,932] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:30:56,965] {logging_mixin.py:115} INFO - [2023-02-28 17:30:56,965] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:30:56,982] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.647 seconds
+[2023-02-28 17:31:27,643] {processor.py:153} INFO - Started process (PID=551) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:27,646] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:31:27,647] {logging_mixin.py:115} INFO - [2023-02-28 17:31:27,647] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:28,011] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:28,033] {logging_mixin.py:115} INFO - [2023-02-28 17:31:28,033] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:31:28,057] {logging_mixin.py:115} INFO - [2023-02-28 17:31:28,057] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:31:28,073] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.434 seconds
+[2023-02-28 17:31:58,803] {processor.py:153} INFO - Started process (PID=562) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:58,804] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:31:58,805] {logging_mixin.py:115} INFO - [2023-02-28 17:31:58,805] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:59,381] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:31:59,416] {logging_mixin.py:115} INFO - [2023-02-28 17:31:59,416] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:31:59,460] {logging_mixin.py:115} INFO - [2023-02-28 17:31:59,459] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:31:59,478] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.678 seconds
+[2023-02-28 17:32:29,987] {processor.py:153} INFO - Started process (PID=573) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:32:29,990] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:32:29,991] {logging_mixin.py:115} INFO - [2023-02-28 17:32:29,991] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:32:30,345] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:32:30,364] {logging_mixin.py:115} INFO - [2023-02-28 17:32:30,364] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:32:30,391] {logging_mixin.py:115} INFO - [2023-02-28 17:32:30,391] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:32:30,403] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.419 seconds
+[2023-02-28 17:33:01,224] {processor.py:153} INFO - Started process (PID=584) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:01,228] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:33:01,229] {logging_mixin.py:115} INFO - [2023-02-28 17:33:01,228] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:01,577] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:01,600] {logging_mixin.py:115} INFO - [2023-02-28 17:33:01,600] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:33:01,623] {logging_mixin.py:115} INFO - [2023-02-28 17:33:01,623] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:33:01,638] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.420 seconds
+[2023-02-28 17:33:32,405] {processor.py:153} INFO - Started process (PID=595) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:32,409] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:33:32,409] {logging_mixin.py:115} INFO - [2023-02-28 17:33:32,409] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:32,796] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:33:32,828] {logging_mixin.py:115} INFO - [2023-02-28 17:33:32,828] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:33:32,860] {logging_mixin.py:115} INFO - [2023-02-28 17:33:32,859] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:33:32,873] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.472 seconds
+[2023-02-28 17:34:03,596] {processor.py:153} INFO - Started process (PID=608) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:03,597] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:34:03,597] {logging_mixin.py:115} INFO - [2023-02-28 17:34:03,597] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:04,074] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:04,094] {logging_mixin.py:115} INFO - [2023-02-28 17:34:04,093] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:34:04,117] {logging_mixin.py:115} INFO - [2023-02-28 17:34:04,117] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:34:04,128] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.535 seconds
+[2023-02-28 17:34:34,786] {processor.py:153} INFO - Started process (PID=620) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:34,788] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:34:34,790] {logging_mixin.py:115} INFO - [2023-02-28 17:34:34,790] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:35,396] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:34:35,438] {logging_mixin.py:115} INFO - [2023-02-28 17:34:35,437] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:34:35,483] {logging_mixin.py:115} INFO - [2023-02-28 17:34:35,482] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:34:35,502] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.724 seconds
+[2023-02-28 17:35:05,914] {processor.py:153} INFO - Started process (PID=631) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:05,915] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:35:05,916] {logging_mixin.py:115} INFO - [2023-02-28 17:35:05,916] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:06,393] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:06,419] {logging_mixin.py:115} INFO - [2023-02-28 17:35:06,418] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:35:06,447] {logging_mixin.py:115} INFO - [2023-02-28 17:35:06,447] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:35:06,461] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.551 seconds
+[2023-02-28 17:35:37,075] {processor.py:153} INFO - Started process (PID=642) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:37,076] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:35:37,077] {logging_mixin.py:115} INFO - [2023-02-28 17:35:37,077] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:37,430] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:35:37,451] {logging_mixin.py:115} INFO - [2023-02-28 17:35:37,451] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:35:37,474] {logging_mixin.py:115} INFO - [2023-02-28 17:35:37,474] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:35:37,485] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.415 seconds
