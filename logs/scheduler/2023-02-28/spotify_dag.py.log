@@ -573,3 +573,143 @@ TypeError: __init__() got an unexpected keyword argument 'schedule'
 [2023-02-28 17:35:37,451] {logging_mixin.py:115} INFO - [2023-02-28 17:35:37,451] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-02-28 17:35:37,474] {logging_mixin.py:115} INFO - [2023-02-28 17:35:37,474] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
 [2023-02-28 17:35:37,485] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.415 seconds
+[2023-02-28 17:36:08,229] {processor.py:153} INFO - Started process (PID=653) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:08,234] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:36:08,235] {logging_mixin.py:115} INFO - [2023-02-28 17:36:08,234] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:08,597] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:08,616] {logging_mixin.py:115} INFO - [2023-02-28 17:36:08,616] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:36:08,642] {logging_mixin.py:115} INFO - [2023-02-28 17:36:08,642] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:36:08,653] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.430 seconds
+[2023-02-28 17:36:39,382] {processor.py:153} INFO - Started process (PID=664) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:39,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:36:39,387] {logging_mixin.py:115} INFO - [2023-02-28 17:36:39,386] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:40,014] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:36:40,050] {logging_mixin.py:115} INFO - [2023-02-28 17:36:40,049] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:36:40,103] {logging_mixin.py:115} INFO - [2023-02-28 17:36:40,103] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:36:40,127] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.754 seconds
+[2023-02-28 17:37:10,563] {processor.py:153} INFO - Started process (PID=675) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:10,567] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:37:10,568] {logging_mixin.py:115} INFO - [2023-02-28 17:37:10,568] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:10,988] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:11,019] {logging_mixin.py:115} INFO - [2023-02-28 17:37:11,018] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:37:11,050] {logging_mixin.py:115} INFO - [2023-02-28 17:37:11,050] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:37:11,069] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.511 seconds
+[2023-02-28 17:37:41,827] {processor.py:153} INFO - Started process (PID=686) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:41,831] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:37:41,832] {logging_mixin.py:115} INFO - [2023-02-28 17:37:41,832] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:42,209] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:37:42,228] {logging_mixin.py:115} INFO - [2023-02-28 17:37:42,228] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:37:42,253] {logging_mixin.py:115} INFO - [2023-02-28 17:37:42,252] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:37:42,266] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.444 seconds
+[2023-02-28 17:38:12,978] {processor.py:153} INFO - Started process (PID=697) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:12,982] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:38:12,983] {logging_mixin.py:115} INFO - [2023-02-28 17:38:12,983] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:13,364] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:13,385] {logging_mixin.py:115} INFO - [2023-02-28 17:38:13,385] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:38:13,407] {logging_mixin.py:115} INFO - [2023-02-28 17:38:13,407] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:38:13,422] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.446 seconds
+[2023-02-28 17:38:44,164] {processor.py:153} INFO - Started process (PID=708) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:44,166] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:38:44,166] {logging_mixin.py:115} INFO - [2023-02-28 17:38:44,166] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:44,731] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:38:44,772] {logging_mixin.py:115} INFO - [2023-02-28 17:38:44,772] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:38:44,819] {logging_mixin.py:115} INFO - [2023-02-28 17:38:44,819] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:38:44,843] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.684 seconds
+[2023-02-28 17:39:15,324] {processor.py:153} INFO - Started process (PID=722) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:15,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:39:15,328] {logging_mixin.py:115} INFO - [2023-02-28 17:39:15,328] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:15,739] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:15,759] {logging_mixin.py:115} INFO - [2023-02-28 17:39:15,759] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:39:15,784] {logging_mixin.py:115} INFO - [2023-02-28 17:39:15,784] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:39:15,796] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.475 seconds
+[2023-02-28 17:39:46,570] {processor.py:153} INFO - Started process (PID=733) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:46,572] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:39:46,572] {logging_mixin.py:115} INFO - [2023-02-28 17:39:46,572] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:47,285] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:39:47,316] {logging_mixin.py:115} INFO - [2023-02-28 17:39:47,316] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:39:47,347] {logging_mixin.py:115} INFO - [2023-02-28 17:39:47,347] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:39:47,363] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.798 seconds
+[2023-02-28 17:40:17,846] {processor.py:153} INFO - Started process (PID=744) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:17,847] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:40:17,847] {logging_mixin.py:115} INFO - [2023-02-28 17:40:17,847] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:18,332] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:18,362] {logging_mixin.py:115} INFO - [2023-02-28 17:40:18,361] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:40:18,392] {logging_mixin.py:115} INFO - [2023-02-28 17:40:18,392] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:40:18,413] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.570 seconds
+[2023-02-28 17:40:49,026] {processor.py:153} INFO - Started process (PID=758) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:49,027] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:40:49,027] {logging_mixin.py:115} INFO - [2023-02-28 17:40:49,027] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:49,406] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:40:49,430] {logging_mixin.py:115} INFO - [2023-02-28 17:40:49,429] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:40:49,455] {logging_mixin.py:115} INFO - [2023-02-28 17:40:49,455] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:40:49,468] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.444 seconds
+[2023-02-28 17:41:20,181] {processor.py:153} INFO - Started process (PID=769) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:20,185] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:41:20,185] {logging_mixin.py:115} INFO - [2023-02-28 17:41:20,185] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:20,958] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:20,998] {logging_mixin.py:115} INFO - [2023-02-28 17:41:20,997] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:41:21,048] {logging_mixin.py:115} INFO - [2023-02-28 17:41:21,048] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:41:21,075] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.898 seconds
+[2023-02-28 17:41:51,377] {processor.py:153} INFO - Started process (PID=780) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:51,381] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:41:51,382] {logging_mixin.py:115} INFO - [2023-02-28 17:41:51,382] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:51,875] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:41:51,899] {logging_mixin.py:115} INFO - [2023-02-28 17:41:51,899] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:41:51,930] {logging_mixin.py:115} INFO - [2023-02-28 17:41:51,930] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:41:51,945] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.571 seconds
+[2023-02-28 17:42:22,570] {processor.py:153} INFO - Started process (PID=794) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:22,571] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:42:22,571] {logging_mixin.py:115} INFO - [2023-02-28 17:42:22,571] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:22,947] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:22,967] {logging_mixin.py:115} INFO - [2023-02-28 17:42:22,966] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:42:23,002] {logging_mixin.py:115} INFO - [2023-02-28 17:42:23,002] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:42:23,016] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.448 seconds
+[2023-02-28 17:42:53,833] {processor.py:153} INFO - Started process (PID=808) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:53,834] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:42:53,835] {logging_mixin.py:115} INFO - [2023-02-28 17:42:53,835] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:54,355] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:42:54,383] {logging_mixin.py:115} INFO - [2023-02-28 17:42:54,383] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:42:54,418] {logging_mixin.py:115} INFO - [2023-02-28 17:42:54,418] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:42:54,436] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.606 seconds
+[2023-02-28 17:43:24,971] {processor.py:153} INFO - Started process (PID=819) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:24,975] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:43:24,975] {logging_mixin.py:115} INFO - [2023-02-28 17:43:24,975] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:25,454] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:25,497] {logging_mixin.py:115} INFO - [2023-02-28 17:43:25,496] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:43:25,529] {logging_mixin.py:115} INFO - [2023-02-28 17:43:25,529] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:43:25,543] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.576 seconds
+[2023-02-28 17:43:56,163] {processor.py:153} INFO - Started process (PID=833) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:56,164] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:43:56,165] {logging_mixin.py:115} INFO - [2023-02-28 17:43:56,164] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:56,851] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:43:56,883] {logging_mixin.py:115} INFO - [2023-02-28 17:43:56,883] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:43:56,918] {logging_mixin.py:115} INFO - [2023-02-28 17:43:56,917] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:43:56,935] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.775 seconds
+[2023-02-28 17:44:27,330] {processor.py:153} INFO - Started process (PID=847) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:27,332] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:44:27,332] {logging_mixin.py:115} INFO - [2023-02-28 17:44:27,332] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:27,860] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:27,892] {logging_mixin.py:115} INFO - [2023-02-28 17:44:27,891] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:44:27,926] {logging_mixin.py:115} INFO - [2023-02-28 17:44:27,926] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:44:27,949] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.622 seconds
+[2023-02-28 17:44:58,506] {processor.py:153} INFO - Started process (PID=861) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:58,511] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:44:58,512] {logging_mixin.py:115} INFO - [2023-02-28 17:44:58,512] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:58,885] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:44:58,906] {logging_mixin.py:115} INFO - [2023-02-28 17:44:58,906] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:44:58,936] {logging_mixin.py:115} INFO - [2023-02-28 17:44:58,936] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:44:58,950] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.447 seconds
+[2023-02-28 17:45:29,705] {processor.py:153} INFO - Started process (PID=872) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:45:29,708] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:45:29,709] {logging_mixin.py:115} INFO - [2023-02-28 17:45:29,709] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:45:30,136] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:45:30,164] {logging_mixin.py:115} INFO - [2023-02-28 17:45:30,164] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:45:30,190] {logging_mixin.py:115} INFO - [2023-02-28 17:45:30,190] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:45:30,205] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.503 seconds
+[2023-02-28 17:46:00,839] {processor.py:153} INFO - Started process (PID=886) to work on /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:46:00,843] {processor.py:641} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2023-02-28 17:46:00,843] {logging_mixin.py:115} INFO - [2023-02-28 17:46:00,843] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:46:01,201] {processor.py:651} INFO - DAG(s) dict_keys(['spotify_dag']) retrieved from /opt/airflow/dags/spotify_dag.py
+[2023-02-28 17:46:01,223] {logging_mixin.py:115} INFO - [2023-02-28 17:46:01,223] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-02-28 17:46:01,246] {logging_mixin.py:115} INFO - [2023-02-28 17:46:01,246] {dag.py:2919} INFO - Setting next_dagrun for spotify_dag to 2023-02-28T00:00:00+00:00, run_after=2023-03-01T00:00:00+00:00
+[2023-02-28 17:46:01,261] {processor.py:161} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.425 seconds
