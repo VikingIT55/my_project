@@ -1,0 +1,33 @@
+[2023-05-24T16:05:05.487+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_token.ETL manual__2023-05-23T17:54:32.171118+00:00 [queued]>
+[2023-05-24T16:05:05.503+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_token.ETL manual__2023-05-23T17:54:32.171118+00:00 [queued]>
+[2023-05-24T16:05:05.504+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-24T16:05:05.504+0000] {taskinstance.py:1283} INFO - Starting attempt 7 of 12
+[2023-05-24T16:05:05.504+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-24T16:05:05.529+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): ETL> on 2023-05-23 17:54:32.171118+00:00
+[2023-05-24T16:05:05.536+0000] {standard_task_runner.py:55} INFO - Started process 1649 to run task
+[2023-05-24T16:05:05.539+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'refresh_token', 'ETL', 'manual__2023-05-23T17:54:32.171118+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/refresh_token_DAG.py', '--cfg-path', '/tmp/tmpeu0dacge']
+[2023-05-24T16:05:05.541+0000] {standard_task_runner.py:83} INFO - Job 107: Subtask ETL
+[2023-05-24T16:05:05.629+0000] {task_command.py:388} INFO - Running <TaskInstance: refresh_token.ETL manual__2023-05-23T17:54:32.171118+00:00 [running]> on host 2fa3ade57007
+[2023-05-24T16:05:05.749+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=refresh_token
+AIRFLOW_CTX_TASK_ID=ETL
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-23T17:54:32.171118+00:00
+AIRFLOW_CTX_TRY_NUMBER=7
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-23T17:54:32.171118+00:00
+[2023-05-24T16:05:05.750+0000] {logging_mixin.py:137} INFO - <function now_token at 0x7fb288eae320>
+[2023-05-24T16:05:06.223+0000] {taskinstance.py:1775} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Spotify_ETL.py", line 58, in run_spotify_etl
+    for song in resource['items']:
+KeyError: 'items'
+[2023-05-24T16:05:06.239+0000] {taskinstance.py:1326} INFO - Marking task as UP_FOR_RETRY. dag_id=refresh_token, task_id=ETL, execution_date=20230523T175432, start_date=20230524T160505, end_date=20230524T160506
+[2023-05-24T16:05:06.258+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 107 for task ETL ('items'; 1649)
+[2023-05-24T16:05:06.273+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-24T16:05:06.301+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

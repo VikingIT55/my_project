@@ -1,0 +1,79 @@
+[2023-05-23T17:30:44.731+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [queued]>
+[2023-05-23T17:30:44.744+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [queued]>
+[2023-05-23T17:30:44.745+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T17:30:44.745+0000] {taskinstance.py:1283} INFO - Starting attempt 2 of 7
+[2023-05-23T17:30:44.745+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T17:30:44.764+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): fresh> on 2023-05-23 17:10:43.672559+00:00
+[2023-05-23T17:30:44.769+0000] {standard_task_runner.py:55} INFO - Started process 2777 to run task
+[2023-05-23T17:30:44.774+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'refresh_token', 'fresh', 'manual__2023-05-23T17:10:43.672559+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/refresh_token_DAG.py', '--cfg-path', '/tmp/tmpk2envxjl']
+[2023-05-23T17:30:44.776+0000] {standard_task_runner.py:83} INFO - Job 47: Subtask fresh
+[2023-05-23T17:30:44.861+0000] {task_command.py:388} INFO - Running <TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [running]> on host 2a789c3fa429
+[2023-05-23T17:30:44.967+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=refresh_token
+AIRFLOW_CTX_TASK_ID=fresh
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-23T17:10:43.672559+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-23T17:10:43.672559+00:00
+[2023-05-23T17:31:02.456+0000] {taskinstance.py:1775} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f06cf509b10>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='accounts.spotify.com', port=443): Max retries exceeded with url: /api/token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f06cf509b10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/refresh_token.py", line 16, in refresh
+    headers={'Authorization': base_64})
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='accounts.spotify.com', port=443): Max retries exceeded with url: /api/token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f06cf509b10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2023-05-23T17:31:02.478+0000] {taskinstance.py:1326} INFO - Marking task as UP_FOR_RETRY. dag_id=refresh_token, task_id=fresh, execution_date=20230523T171043, start_date=20230523T173044, end_date=20230523T173102
+[2023-05-23T17:31:02.509+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 47 for task fresh (HTTPSConnectionPool(host='accounts.spotify.com', port=443): Max retries exceeded with url: /api/token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f06cf509b10>: Failed to establish a new connection: [Errno -2] Name or service not known')); 2777)
+[2023-05-23T17:31:02.541+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-23T17:31:02.599+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

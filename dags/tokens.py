@@ -1,2 +1,0 @@
-token = 'BQA1jbFUoSvWoaxm9mzcXGMjYIOknpxSbVqgj4OeS9tOU1coDXSGzDHc_c5l4V88mEnMSAm7vDNQ1_ZGfjQGqoiZwa-bpLnZBnFBMf4elPrt7qSfT8HHdfD5-cypr-KVx8iFjyDCdNdgtDfpXDelGKwJFUMw00CILvFBOh7NcR4DML1sC3LTafWvWsQJGo6MV7w3OAwbLTRp8w'
-USER_NAME = '31zrgkx3j2jbvsrosrq5bixsfprm'

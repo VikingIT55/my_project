@@ -1,3 +1,4 @@
+
 import requests
 import pandas as pd
 from sqlalchemy import create_engine
@@ -5,9 +6,16 @@ import json
 from datetime import datetime, timedelta
 import psycopg2
 
-from tokens import token
+from refresh_token import Refresh
 
-DATABASE_LOCATION = 'postgresql+psycopg2://postgres:5555@localhost:5432/postgres'
+token = ''
+def call_refresh():
+    print('Refreshing token')
+    refreshCaller = Refresh()
+    global token
+    token = refreshCaller.refresh()
+
+DATABASE_LOCATION = 'postgresql+psycopg2://viking:5555@localhost:5432/spotify_db'
 
 headers = {"Accept": "application/json",
            "Content-Type": "application/json",
@@ -41,13 +49,13 @@ def check_is_valid_data(df: pd.DataFrame) -> bool:
 
     return True
 def run_spotify_etl():
-    DATABASE_LOCATION = 'postgresql+psycopg2://postgres:5555@localhost:5432/postgres'
+    DATABASE_LOCATION = 'postgresql+psycopg2://viking:5555@localhost:5432/spotify_db'
 
     headers = {"Accept": "application/json",
                "Content-Type": "application/json",
                "Authorization": "Bearer {token}".format(token=token)}
 
-    yesterday = datetime.now() - timedelta(days=1)
+    yesterday = datetime.now() - timedelta(days=5)
     yesterday = yesterday.replace(hour=0, minute=0, second=0, microsecond=0)
     yesterday_unix_timestamp = int(yesterday.timestamp()) * 1000
 
@@ -60,11 +68,16 @@ def run_spotify_etl():
     played_at = []
     name_track = []
     timestamps = []
+    a = "'"
     for song in resource['items']:
         artist.append(song['track']['album']['artists'][0]['name'])
         played_at.append(song['played_at'])
         timestamps.append(song['played_at'][0:10])
-        name_track.append(song['track']['name'])
+        if a in song['track']['name']:
+            pass
+
+        else:
+            name_track.append(song['track']['name'])
     song_dict = {
         'played_at': played_at,
         'artist': artist,
@@ -78,11 +91,11 @@ def run_spotify_etl():
         #print('Data valid, proceed to Load stage')
 
     engine = create_engine(DATABASE_LOCATION)
-    conn = psycopg2.connect(user='postgres',
+    conn = psycopg2.connect(user='viking',
                             password='5555',
                             host='localhost',
                             port='5432',
-                            database='postgres')
+                            database='spotify_db')
     cursor = conn.cursor()
 
     sql_query = """
@@ -101,10 +114,12 @@ def run_spotify_etl():
     try:
         spotify_df.to_sql("spotify_data", engine, index=False, if_exists='append')
         print('Data add successfully')
+
     except:
         print("Data already exists in the database")
 
     conn.close()
     print("Close database successfully")
 
-
+call_refresh()
+run_spotify_etl()

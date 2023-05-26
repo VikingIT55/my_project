@@ -1,0 +1,23 @@
+[2023-05-23T17:10:44.857+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [queued]>
+[2023-05-23T17:10:44.871+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [queued]>
+[2023-05-23T17:10:44.872+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T17:10:44.872+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 6
+[2023-05-23T17:10:44.872+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T17:10:44.891+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): fresh> on 2023-05-23 17:10:43.672559+00:00
+[2023-05-23T17:10:44.896+0000] {standard_task_runner.py:55} INFO - Started process 2292 to run task
+[2023-05-23T17:10:44.898+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'refresh_token', 'fresh', 'manual__2023-05-23T17:10:43.672559+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/refresh_token_DAG.py', '--cfg-path', '/tmp/tmpk2gp687w']
+[2023-05-23T17:10:44.900+0000] {standard_task_runner.py:83} INFO - Job 46: Subtask fresh
+[2023-05-23T17:10:44.979+0000] {task_command.py:388} INFO - Running <TaskInstance: refresh_token.fresh manual__2023-05-23T17:10:43.672559+00:00 [running]> on host 2a789c3fa429
+[2023-05-23T17:10:45.092+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=refresh_token
+AIRFLOW_CTX_TASK_ID=fresh
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-23T17:10:43.672559+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-23T17:10:43.672559+00:00
+[2023-05-23T17:10:45.307+0000] {python.py:177} INFO - Done. Returned value was: BQDjRxK_ofY_ug4tYCAQ0qdrAVTX0dS-rkmu04XOHy70UWbYPdVkdFxAJS978Bl8eZsg74CtRnhchBbwQy7Xs1e_srgf9p9sJZpPmWfiokB4iJuG7B43wDtsKGzU7nHts2FofYd6MYMdJKnWnII3gNCoAG1aBeVD0HaPjRfwgoUkgWAu0VtenZfzOo7d5fxRyvjRPi8G8yXaMOM
+[2023-05-23T17:10:45.336+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=refresh_token, task_id=fresh, execution_date=20230523T171043, start_date=20230523T171044, end_date=20230523T171045
+[2023-05-23T17:10:45.395+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-23T17:10:45.420+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

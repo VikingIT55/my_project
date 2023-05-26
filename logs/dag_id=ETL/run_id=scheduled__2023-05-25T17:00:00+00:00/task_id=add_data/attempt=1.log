@@ -1,0 +1,149 @@
+[2023-05-26T17:10:40.994+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL.add_data scheduled__2023-05-25T17:00:00+00:00 [queued]>
+[2023-05-26T17:10:41.011+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL.add_data scheduled__2023-05-25T17:00:00+00:00 [queued]>
+[2023-05-26T17:10:41.011+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26T17:10:41.012+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 6
+[2023-05-26T17:10:41.012+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26T17:10:41.048+0000] {taskinstance.py:1303} INFO - Executing <Task(PostgresOperator): add_data> on 2023-05-25 17:00:00+00:00
+[2023-05-26T17:10:41.056+0000] {standard_task_runner.py:55} INFO - Started process 3509 to run task
+[2023-05-26T17:10:41.063+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'add_data', 'scheduled__2023-05-25T17:00:00+00:00', '--job-id', '374', '--raw', '--subdir', 'DAGS_FOLDER/refresh_token_DAG.py', '--cfg-path', '/tmp/tmp6io_haq2']
+[2023-05-26T17:10:41.066+0000] {standard_task_runner.py:83} INFO - Job 374: Subtask add_data
+[2023-05-26T17:10:41.179+0000] {task_command.py:388} INFO - Running <TaskInstance: ETL.add_data scheduled__2023-05-25T17:00:00+00:00 [running]> on host 05172cfd5782
+[2023-05-26T17:10:42.060+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=add_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-25T17:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-05-25T17:00:00+00:00
+[2023-05-26T17:10:42.061+0000] {sql.py:254} INFO - Executing: 
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:49:01.388Z',
+            'Katy Perry',
+            'Hot N Cold',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:45:20.131Z',
+            'Nightwish',
+            'Nemo',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:40:43.778Z',
+            'Thirty Seconds To Mars',
+            'The Kill',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:36:51.704Z',
+            'Rammstein',
+            'Feuer frei!',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T10:04:04.448Z',
+            'Lady Gaga',
+            'Poker Face',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:59:02.505Z',
+            'Skillet',
+            'I Want to Live',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:55:33.128Z',
+            'The Qemists',
+            'Run You',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:51:11.222Z',
+            'DJ Layla',
+            'Single Lady',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:47:31.384Z',
+            'Thousand Foot Krutch',
+            'Courtesy Call',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:40:41.328Z',
+            'Taio Cruz',
+            'Dynamite',
+            '2023-05-25'
+            )
+            
+[2023-05-26T17:10:42.086+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-05-26T17:10:43.163+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-05-26T17:10:43.175+0000] {sql.py:375} INFO - Running statement: 
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:49:01.388Z',
+            'Katy Perry',
+            'Hot N Cold',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:45:20.131Z',
+            'Nightwish',
+            'Nemo',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:40:43.778Z',
+            'Thirty Seconds To Mars',
+            'The Kill',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T16:36:51.704Z',
+            'Rammstein',
+            'Feuer frei!',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T10:04:04.448Z',
+            'Lady Gaga',
+            'Poker Face',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:59:02.505Z',
+            'Skillet',
+            'I Want to Live',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:55:33.128Z',
+            'The Qemists',
+            'Run You',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:51:11.222Z',
+            'DJ Layla',
+            'Single Lady',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:47:31.384Z',
+            'Thousand Foot Krutch',
+            'Courtesy Call',
+            '2023-05-25'
+            );
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:40:41.328Z',
+            'Taio Cruz',
+            'Dynamite',
+            '2023-05-25'
+            )
+            , parameters: None
+[2023-05-26T17:10:43.177+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-05-26T17:10:43.223+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=add_data, execution_date=20230525T170000, start_date=20230526T171040, end_date=20230526T171043
+[2023-05-26T17:10:43.279+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-26T17:10:43.335+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,68 @@
+[2023-05-26T15:59:43.555+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL.add_data scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2023-05-26T15:59:43.582+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL.add_data scheduled__2023-05-25T00:00:00+00:00 [queued]>
+[2023-05-26T15:59:43.582+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26T15:59:43.582+0000] {taskinstance.py:1283} INFO - Starting attempt 32 of 37
+[2023-05-26T15:59:43.583+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26T15:59:43.611+0000] {taskinstance.py:1303} INFO - Executing <Task(PostgresOperator): add_data> on 2023-05-25 00:00:00+00:00
+[2023-05-26T15:59:43.619+0000] {standard_task_runner.py:55} INFO - Started process 1452 to run task
+[2023-05-26T15:59:43.625+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'add_data', 'scheduled__2023-05-25T00:00:00+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/refresh_token_DAG.py', '--cfg-path', '/tmp/tmp32yq7p3x']
+[2023-05-26T15:59:43.627+0000] {standard_task_runner.py:83} INFO - Job 300: Subtask add_data
+[2023-05-26T15:59:43.764+0000] {task_command.py:388} INFO - Running <TaskInstance: ETL.add_data scheduled__2023-05-25T00:00:00+00:00 [running]> on host 05172cfd5782
+[2023-05-26T15:59:44.061+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=add_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=32
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-05-25T00:00:00+00:00
+[2023-05-26T15:59:44.063+0000] {sql.py:254} INFO - Executing: 
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:21:02.777Z',
+            'Kataklysm',
+            'Guillotine',
+            '2023-05-25'
+            )
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:18:01.673Z',
+            'YAKTAK',
+            'Чекає вдома (feat. DOVI)',
+            '2023-05-25'
+            )
+            
+[2023-05-26T15:59:44.076+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-05-26T15:59:44.481+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-05-26T15:59:44.492+0000] {sql.py:375} INFO - Running statement: 
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:21:02.777Z',
+            'Kataklysm',
+            'Guillotine',
+            '2023-05-25'
+            )
+            insert into spotify_data (played_at, artist, name_track, timestamps) values 
+            ('2023-05-25T09:18:01.673Z',
+            'YAKTAK',
+            'Чекає вдома (feat. DOVI)',
+            '2023-05-25'
+            )
+            , parameters: None
+[2023-05-26T15:59:44.493+0000] {taskinstance.py:1775} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 266, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "insert"
+LINE 8:             insert into spotify_data (played_at, artist, nam...
+                    ^
+
+[2023-05-26T15:59:44.514+0000] {taskinstance.py:1326} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL, task_id=add_data, execution_date=20230525T000000, start_date=20230526T155943, end_date=20230526T155944
+[2023-05-26T15:59:44.559+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 300 for task add_data (syntax error at or near "insert"
+LINE 8:             insert into spotify_data (played_at, artist, nam...
+                    ^
+; 1452)
+[2023-05-26T15:59:44.602+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-05-26T15:59:44.641+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check
