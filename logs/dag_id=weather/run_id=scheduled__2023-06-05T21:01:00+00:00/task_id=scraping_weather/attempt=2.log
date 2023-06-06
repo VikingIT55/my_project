@@ -1,0 +1,23 @@
+[2023-06-06T12:58:10.318+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather.scraping_weather scheduled__2023-06-05T21:01:00+00:00 [queued]>
+[2023-06-06T12:58:10.346+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather.scraping_weather scheduled__2023-06-05T21:01:00+00:00 [queued]>
+[2023-06-06T12:58:10.346+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-06T12:58:10.346+0000] {taskinstance.py:1283} INFO - Starting attempt 2 of 6
+[2023-06-06T12:58:10.346+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-06T12:58:10.406+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): scraping_weather> on 2023-06-05 21:01:00+00:00
+[2023-06-06T12:58:10.420+0000] {standard_task_runner.py:55} INFO - Started process 13570 to run task
+[2023-06-06T12:58:10.433+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'weather', 'scraping_weather', 'scheduled__2023-06-05T21:01:00+00:00', '--job-id', '912', '--raw', '--subdir', 'DAGS_FOLDER/weather_DAG.py', '--cfg-path', '/tmp/tmpmus6o70f']
+[2023-06-06T12:58:10.443+0000] {standard_task_runner.py:83} INFO - Job 912: Subtask scraping_weather
+[2023-06-06T12:58:10.575+0000] {task_command.py:388} INFO - Running <TaskInstance: weather.scraping_weather scheduled__2023-06-05T21:01:00+00:00 [running]> on host 05172cfd5782
+[2023-06-06T12:58:10.741+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=weather
+AIRFLOW_CTX_TASK_ID=scraping_weather
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-05T21:01:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-05T21:01:00+00:00
+[2023-06-06T12:58:12.358+0000] {python.py:177} INFO - Done. Returned value was: {'time': '2023-06-06T14:56:14+02:00', 'current_temperature': '+21°', 'feels_like': '+23°C', 'sky': 'Overcast, light rain', 'chance_of_precipitation': '30', 'wind': '2', 'pressure': '739', 'uv_index': '9/12', 'humidity': '60', 'precipitation': '0.22', 'timestamps': '2023-06-06'}
+[2023-06-06T12:58:12.480+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=weather, task_id=scraping_weather, execution_date=20230605T210100, start_date=20230606T125810, end_date=20230606T125812
+[2023-06-06T12:58:12.653+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-06T12:58:12.714+0000] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check

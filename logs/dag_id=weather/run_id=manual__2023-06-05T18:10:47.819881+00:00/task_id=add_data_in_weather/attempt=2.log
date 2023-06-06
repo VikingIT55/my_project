@@ -1,0 +1,57 @@
+[2023-06-05T18:11:29.401+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather.add_data_in_weather manual__2023-06-05T18:10:47.819881+00:00 [queued]>
+[2023-06-05T18:11:29.419+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather.add_data_in_weather manual__2023-06-05T18:10:47.819881+00:00 [queued]>
+[2023-06-05T18:11:29.419+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-05T18:11:29.419+0000] {taskinstance.py:1283} INFO - Starting attempt 2 of 7
+[2023-06-05T18:11:29.419+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-05T18:11:29.444+0000] {taskinstance.py:1303} INFO - Executing <Task(PostgresOperator): add_data_in_weather> on 2023-06-05 18:10:47.819881+00:00
+[2023-06-05T18:11:29.450+0000] {standard_task_runner.py:55} INFO - Started process 13093 to run task
+[2023-06-05T18:11:29.455+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'weather', 'add_data_in_weather', 'manual__2023-06-05T18:10:47.819881+00:00', '--job-id', '870', '--raw', '--subdir', 'DAGS_FOLDER/weather_DAG.py', '--cfg-path', '/tmp/tmpnkrmqvwy']
+[2023-06-05T18:11:29.457+0000] {standard_task_runner.py:83} INFO - Job 870: Subtask add_data_in_weather
+[2023-06-05T18:11:29.557+0000] {task_command.py:388} INFO - Running <TaskInstance: weather.add_data_in_weather manual__2023-06-05T18:10:47.819881+00:00 [running]> on host 05172cfd5782
+[2023-06-05T18:11:29.829+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=weather
+AIRFLOW_CTX_TASK_ID=add_data_in_weather
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-05T18:10:47.819881+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-05T18:10:47.819881+00:00
+[2023-06-05T18:11:29.830+0000] {sql.py:254} INFO - Executing: 
+            insert into weather_data (date, current_temperature, feels_like, sky, chance_of_precipitation, wind, 
+            pressure, uv_index, humidity, precipitation, timestamps) values 
+            ('2023-06-05T20:11:25+02:00',
+            '+17°',
+            '+18°C',
+            'Overcast, no precipitation',
+            '40',
+            '2',
+            '741',
+            '0/12',
+            '69',
+            '0.01',
+            '2023-06-05'
+            )
+            
+[2023-06-05T18:11:29.842+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-05T18:11:30.293+0000] {base.py:73} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2023-06-05T18:11:30.297+0000] {sql.py:375} INFO - Running statement: 
+            insert into weather_data (date, current_temperature, feels_like, sky, chance_of_precipitation, wind, 
+            pressure, uv_index, humidity, precipitation, timestamps) values 
+            ('2023-06-05T20:11:25+02:00',
+            '+17°',
+            '+18°C',
+            'Overcast, no precipitation',
+            '40',
+            '2',
+            '741',
+            '0/12',
+            '69',
+            '0.01',
+            '2023-06-05'
+            )
+            , parameters: None
+[2023-06-05T18:11:30.298+0000] {sql.py:384} INFO - Rows affected: 1
+[2023-06-05T18:11:30.313+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=weather, task_id=add_data_in_weather, execution_date=20230605T181047, start_date=20230605T181129, end_date=20230605T181130
+[2023-06-05T18:11:30.364+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-05T18:11:30.398+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

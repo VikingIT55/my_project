@@ -4,8 +4,8 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from refresh_token import Refresh
 from Spotify_ETL import run_spotify_etl
-
-a = Refresh()
+from weather_v01 import weather_now
+fresh_token = Refresh()
 
 default_args = {
     "owner": "fox",
@@ -23,7 +23,7 @@ with DAG(
 ) as dag:
     refresh_token = PythonOperator(
         task_id="refresh_token",
-        python_callable=a.refresh
+        python_callable=fresh_token.refresh
     )
 
     ETL = PythonOperator(
@@ -111,5 +111,45 @@ with DAG(
             )
             """
     )
+'''    scraping_weather = PythonOperator(
+        task_id="scraping weather",
+        python_callable=weather_now()
+    )
+
+    create_table_weather = PostgresOperator(
+        task_id="create_table_weather",
+        postgres_conn_id="postgres_localhost",
+        sql="""
+                CREATE TABLE IF NOT EXISTS weather_data (
+                    date VARCHAR(200),
+                    current_temperature VARCHAR(200),
+                    feels_like VARCHAR(200),
+                    sky VARCHAR(200),
+                    chance_of_precipitation VARCHAR(200),
+                    wind VARCHAR(200), 
+                    pressure VARCHAR(200), 
+                    uv_index VARCHAR(200), 
+                    humidity VARCHAR(200), 
+                    precipitation VARCHAR(200),
+                    CONSTRAINT primary_key_constraint PRIMARY KEY (date)
+            )
+            """
+
+    )
+
+    add_data_in_weather = PostgresOperator(
+        task_id="add_data_in_weather",
+        postgres_conn_id="postgres_localhost",
+        sql="""
+            insert into weather_data (date, current_temperature, feels_like, sky, chance_of_precipitation, wind, pressure, 
+            uv_index, humidity, precipitation) values 
+            ('{{ti.xcom_pull(task_ids='scraping weather')[0]}}',
+            '{{ti.xcom_pull(task_ids='scraping weather')[1]}}',
+            '{{ti.xcom_pull(task_ids='scraping weather')[2]}}',
+            '{{ti.xcom_pull(task_ids='scraping weather')[3]}}'
+            )
+            """
+    )'''
 
 refresh_token >> ETL >> create_table >> add_data_in_database
+#scraping_weather >> create_table_weather >> add_data_in_weather

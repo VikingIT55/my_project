@@ -1,0 +1,23 @@
+[2023-05-30T07:39:48.328+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL.refresh_token scheduled__2023-05-28T17:00:00+00:00 [queued]>
+[2023-05-30T07:39:48.340+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL.refresh_token scheduled__2023-05-28T17:00:00+00:00 [queued]>
+[2023-05-30T07:39:48.340+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-30T07:39:48.340+0000] {taskinstance.py:1283} INFO - Starting attempt 2 of 6
+[2023-05-30T07:39:48.340+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-30T07:39:48.358+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): refresh_token> on 2023-05-28 17:00:00+00:00
+[2023-05-30T07:39:48.364+0000] {standard_task_runner.py:55} INFO - Started process 54896 to run task
+[2023-05-30T07:39:48.369+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'refresh_token', 'scheduled__2023-05-28T17:00:00+00:00', '--job-id', '398', '--raw', '--subdir', 'DAGS_FOLDER/ETL_spotify_DAG.py', '--cfg-path', '/tmp/tmp5kuxnr8t']
+[2023-05-30T07:39:48.372+0000] {standard_task_runner.py:83} INFO - Job 398: Subtask refresh_token
+[2023-05-30T07:39:48.444+0000] {task_command.py:388} INFO - Running <TaskInstance: ETL.refresh_token scheduled__2023-05-28T17:00:00+00:00 [running]> on host 05172cfd5782
+[2023-05-30T07:39:48.534+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=refresh_token
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-28T17:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-05-28T17:00:00+00:00
+[2023-05-30T07:39:49.011+0000] {python.py:177} INFO - Done. Returned value was: BQBAfoLSbhXMsPMDuS88C7F4tYIm2O56tGIDHsqj9f8OPm7oopu-n4AGh1q5qrV6HzSi5tf-Bf-aJrMRU5DvhGDABUjI2THeIHhDPnuVb4IzE43zpyvRICggG9GwGkjQsNoDLgnL2obYx4a1qsb701jO0dhIjOWxCiWgVzsFUcoGIidmErRN8L1oDu3EBtszHpF4x3cPVDGX7Ew
+[2023-05-30T07:39:49.046+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=refresh_token, execution_date=20230528T170000, start_date=20230530T073948, end_date=20230530T073949
+[2023-05-30T07:39:49.099+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-30T07:39:49.172+0000] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check

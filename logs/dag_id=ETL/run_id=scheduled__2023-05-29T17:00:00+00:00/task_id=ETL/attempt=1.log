@@ -1,0 +1,23 @@
+[2023-05-31T09:02:48.196+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL.ETL scheduled__2023-05-29T17:00:00+00:00 [queued]>
+[2023-05-31T09:02:48.229+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL.ETL scheduled__2023-05-29T17:00:00+00:00 [queued]>
+[2023-05-31T09:02:48.229+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-31T09:02:48.230+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 6
+[2023-05-31T09:02:48.230+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-31T09:02:48.283+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): ETL> on 2023-05-29 17:00:00+00:00
+[2023-05-31T09:02:48.294+0000] {standard_task_runner.py:55} INFO - Started process 98693 to run task
+[2023-05-31T09:02:48.307+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'ETL', 'scheduled__2023-05-29T17:00:00+00:00', '--job-id', '404', '--raw', '--subdir', 'DAGS_FOLDER/ETL_spotify_DAG.py', '--cfg-path', '/tmp/tmp66n38920']
+[2023-05-31T09:02:48.309+0000] {standard_task_runner.py:83} INFO - Job 404: Subtask ETL
+[2023-05-31T09:02:48.565+0000] {task_command.py:388} INFO - Running <TaskInstance: ETL.ETL scheduled__2023-05-29T17:00:00+00:00 [running]> on host 05172cfd5782
+[2023-05-31T09:02:48.858+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=ETL
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-29T17:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-05-29T17:00:00+00:00
+[2023-05-31T09:02:49.546+0000] {python.py:177} INFO - Done. Returned value was: {'played_at': ['2023-05-30T18:05:42.969Z', '2023-05-30T18:02:52.414Z', '2023-05-30T17:56:12.128Z', '2023-05-30T17:51:48.923Z', '2023-05-30T17:47:54.083Z', '2023-05-30T12:26:39.051Z', '2023-05-30T12:14:18.517Z', '2023-05-30T12:07:59.200Z', '2023-05-30T09:38:02.489Z', '2023-05-30T09:24:19.978Z'], 'artist': ['YAKTAK', 'Trapt', 'STARSET', '3 Doors Down', 'SKAI', 'SKAI', 'Hoobastank', 'Skryabin', 'Skryabin', 'Linkin Park'], 'name_track': ['Чекає вдома (feat. DOVI)', 'Headstrong', 'Carnivore', 'Kryptonite', 'Легковажна', 'Легковажна', 'Out Of Control', 'Квінти', 'Квінти', 'A LIGHT THAT NEVER COMES'], 'timestamps': ['2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30', '2023-05-30']}
+[2023-05-31T09:02:49.631+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=ETL, execution_date=20230529T170000, start_date=20230531T090248, end_date=20230531T090249
+[2023-05-31T09:02:49.740+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-05-31T09:02:49.832+0000] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check

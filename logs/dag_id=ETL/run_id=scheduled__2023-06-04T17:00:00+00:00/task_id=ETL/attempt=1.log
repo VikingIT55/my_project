@@ -1,0 +1,23 @@
+[2023-06-05T17:00:02.440+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL.ETL scheduled__2023-06-04T17:00:00+00:00 [queued]>
+[2023-06-05T17:00:02.454+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL.ETL scheduled__2023-06-04T17:00:00+00:00 [queued]>
+[2023-06-05T17:00:02.454+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-05T17:00:02.454+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 6
+[2023-06-05T17:00:02.454+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-05T17:00:02.476+0000] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): ETL> on 2023-06-04 17:00:00+00:00
+[2023-06-05T17:00:02.481+0000] {standard_task_runner.py:55} INFO - Started process 10159 to run task
+[2023-06-05T17:00:02.484+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'ETL', 'scheduled__2023-06-04T17:00:00+00:00', '--job-id', '436', '--raw', '--subdir', 'DAGS_FOLDER/ETL_spotify_DAG.py', '--cfg-path', '/tmp/tmp1wfp_hqv']
+[2023-06-05T17:00:02.485+0000] {standard_task_runner.py:83} INFO - Job 436: Subtask ETL
+[2023-06-05T17:00:02.553+0000] {task_command.py:388} INFO - Running <TaskInstance: ETL.ETL scheduled__2023-06-04T17:00:00+00:00 [running]> on host 05172cfd5782
+[2023-06-05T17:00:02.651+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=fox
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=ETL
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-04T17:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-04T17:00:00+00:00
+[2023-06-05T17:00:03.069+0000] {python.py:177} INFO - Done. Returned value was: {'played_at': ['2023-06-05T08:45:36.719Z', '2023-06-05T08:41:59.792Z', '2023-06-05T08:33:21.272Z', '2023-06-05T08:26:20.788Z', '2023-06-05T08:20:24.376Z', '2023-06-05T08:16:33.567Z', '2023-06-05T08:12:33.644Z', '2023-06-05T08:09:13.968Z', '2023-06-05T08:03:27.549Z', '2023-06-05T07:59:29.576Z'], 'artist': ['Apocalyptica', 'Avicii', 'Dope', 'Hollywood Undead', 'The Rasmus', 'Volbeat', 'Korn', 'Rammstein', 'Linkin Park', 'Dream Evil'], 'name_track': ['Not Strong Enough', 'Wake Me Up', 'Die MF Die', 'Undead', 'Livin* in a World Without You', 'The Devil*s Bleeding Crown', 'Coming Undone', 'Amerika', 'One Step Closer', 'The Chosen Ones'], 'timestamps': ['2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05', '2023-06-05']}
+[2023-06-05T17:00:03.108+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=ETL, execution_date=20230604T170000, start_date=20230605T170002, end_date=20230605T170003
+[2023-06-05T17:00:03.139+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-06-05T17:00:03.181+0000] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check
